@@ -22,7 +22,7 @@ class AuthViewController: AppViewController<AuthViewModel> {
         
         //проверка роли юзера
         
-        //если - юзер, ope nUserScene
+        //если - юзер, openUserScene
         openUserScene()
         //если - админ, openAdminScene
         //openAdminScene()
