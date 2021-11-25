@@ -23,4 +23,14 @@ class CoreDataService {
             }
             return container
     }()
+    
+    private func saveIfContextHasChanges() {
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                debugPrint(error.localizedDescription)
+            }
+        }
+    }
 }

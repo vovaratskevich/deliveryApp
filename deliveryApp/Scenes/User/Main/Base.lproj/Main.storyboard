@@ -11,6 +11,7 @@
         <!--Navigation Controller-->
         <scene sceneID="0uF-Jw-gBg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZQ-G3-ccT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="Q0G-Qm-m4m" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lkz-c7-GpZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -20,11 +21,10 @@
                         <segue destination="3Jd-iP-3zZ" kind="relationship" relationship="rootViewController" id="7JH-IM-eia"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NZQ-G3-ccT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-339" y="-38"/>
         </scene>
-        <!--Item 2-->
+        <!--Заказы-->
         <scene sceneID="tVp-Wb-6ai">
             <objects>
                 <viewController id="UhQ-8L-0jy" sceneMemberID="viewController">
@@ -57,13 +57,13 @@
                             <constraint firstItem="8xU-zu-QcP" firstAttribute="top" secondItem="286-Ts-zCw" secondAttribute="top" id="sYv-Cq-n4j"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Xnc-Ov-T2c"/>
+                    <tabBarItem key="tabBarItem" title="Заказы" id="Xnc-Ov-T2c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNL-AP-k8K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1161" y="-773"/>
         </scene>
-        <!--Item-->
+        <!--Корзина-->
         <scene sceneID="AqZ-Bi-DJN">
             <objects>
                 <viewController id="iKz-hk-62u" sceneMemberID="viewController">
@@ -73,7 +73,7 @@
                         <viewLayoutGuide key="safeArea" id="eAE-Ue-Uru"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ebC-F6-GoU"/>
+                    <tabBarItem key="tabBarItem" title="Корзина" id="ebC-F6-GoU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yK9-UI-9nS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,17 +191,17 @@
                             <constraint firstItem="3sz-4g-DLC" firstAttribute="leading" secondItem="p2r-Qh-B9L" secondAttribute="leading" id="w9B-VA-BHV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="iz5-0Z-mzh"/>
+                    <tabBarItem key="tabBarItem" title="Блюда" id="iz5-0Z-mzh"/>
                     <navigationItem key="navigationItem" title="Title" id="xWE-LT-Rey"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDE-gw-iOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="437.68115942028987" y="-773.4375"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar View Controller-->
         <scene sceneID="9fe-fJ-waq">
             <objects>
-                <tabBarController id="3Jd-iP-3zZ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarViewController" id="3Jd-iP-3zZ" customClass="MainTabBarViewController" customModule="deliveryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="RZq-yD-kl3">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="sidebar.trailing" catalog="system" id="CAp-5a-quP">
                             <connections>

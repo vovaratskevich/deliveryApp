@@ -10,5 +10,8 @@ import CoreData
 
 class UserDishesViewModel {
     
+    weak var coreDataService: CoreDataService?
+    
+    
     private var DishesList: [NSManagedObject] = [NSManagedObject]()
 }
