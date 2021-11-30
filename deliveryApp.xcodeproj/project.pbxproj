@@ -22,6 +22,8 @@
 		9B705865274647D80099608A /* deliveryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B705863274647D80099608A /* deliveryApp.xcdatamodeld */; };
 		9B705867274647D90099608A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B705866274647D90099608A /* Assets.xcassets */; };
 		9B70586A274647D90099608A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B705868274647D90099608A /* LaunchScreen.storyboard */; };
+		9B86C48A275670CE0079539C /* AdminMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B86C489275670CE0079539C /* AdminMain.storyboard */; };
+		9B86C48F2756725F0079539C /* AdminMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B86C48E2756725F0079539C /* AdminMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		9B705866274647D90099608A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B705869274647D90099608A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B70586B274647D90099608A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B86C489275670CE0079539C /* AdminMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMain.storyboard; sourceTree = "<group>"; };
+		9B86C48E2756725F0079539C /* AdminMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		9B01C966274D15E7000825BA /* Admin */ = {
 			isa = PBXGroup;
 			children = (
+				9B86C48D275671180079539C /* Main */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -238,6 +243,15 @@
 			path = deliveryApp;
 			sourceTree = "<group>";
 		};
+		9B86C48D275671180079539C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9B86C489275670CE0079539C /* AdminMain.storyboard */,
+				9B86C48E2756725F0079539C /* AdminMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -297,6 +311,7 @@
 			files = (
 				9B244796274F7FB600A76223 /* Auth.storyboard in Resources */,
 				9B70586A274647D90099608A /* LaunchScreen.storyboard in Resources */,
+				9B86C48A275670CE0079539C /* AdminMain.storyboard in Resources */,
 				9B705867274647D90099608A /* Assets.xcassets in Resources */,
 				9B705862274647D80099608A /* Main.storyboard in Resources */,
 			);
@@ -310,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B01C963274D15A6000825BA /* UserDishesViewController.swift in Sources */,
+				9B86C48F2756725F0079539C /* AdminMainViewController.swift in Sources */,
 				9B705865274647D80099608A /* deliveryApp.xcdatamodeld in Sources */,
 				9B70585B274647D80099608A /* AppDelegate.swift in Sources */,
 				9B2447A0274F9B1400A76223 /* MainTabBarViewController.swift in Sources */,
