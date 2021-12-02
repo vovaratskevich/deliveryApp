@@ -11,8 +11,23 @@
 		9B01C963274D15A6000825BA /* UserDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B01C962274D15A6000825BA /* UserDishesViewController.swift */; };
 		9B01C96D274D179D000825BA /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B01C96C274D179D000825BA /* CoreDataService.swift */; };
 		9B01C971274D2072000825BA /* UserDishesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B01C970274D2072000825BA /* UserDishesViewModel.swift */; };
+		9B0633FB2758E7F200235E98 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0633FA2758E7F200235E98 /* RegistrationViewController.swift */; };
+		9B0633FE2758E9C500235E98 /* AdminDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0633FD2758E9C500235E98 /* AdminDishesViewController.swift */; };
+		9B06340F2758F60300235E98 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634032758F60300235E98 /* User+CoreDataClass.swift */; };
+		9B0634102758F60300235E98 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634042758F60300235E98 /* User+CoreDataProperties.swift */; };
+		9B0634112758F60300235E98 /* Company+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634052758F60300235E98 /* Company+CoreDataClass.swift */; };
+		9B0634122758F60300235E98 /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634062758F60300235E98 /* Company+CoreDataProperties.swift */; };
+		9B0634132758F60300235E98 /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634072758F60300235E98 /* Order+CoreDataClass.swift */; };
+		9B0634142758F60300235E98 /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634082758F60300235E98 /* Order+CoreDataProperties.swift */; };
+		9B0634152758F60300235E98 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634092758F60300235E98 /* Ingredient+CoreDataClass.swift */; };
+		9B0634162758F60300235E98 /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B06340A2758F60300235E98 /* Ingredient+CoreDataProperties.swift */; };
+		9B0634172758F60300235E98 /* Dish+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B06340B2758F60300235E98 /* Dish+CoreDataClass.swift */; };
+		9B0634182758F60300235E98 /* Dish+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B06340C2758F60300235E98 /* Dish+CoreDataProperties.swift */; };
+		9B0634192758F60300235E98 /* Deliveryman+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B06340D2758F60300235E98 /* Deliveryman+CoreDataClass.swift */; };
+		9B06341A2758F60300235E98 /* Deliveryman+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B06340E2758F60300235E98 /* Deliveryman+CoreDataProperties.swift */; };
+		9B06341E2759194D00235E98 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B06341D2759194D00235E98 /* ProfileViewController.swift */; };
 		9B244796274F7FB600A76223 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B244795274F7FB600A76223 /* Auth.storyboard */; };
-		9B244798274F7FDC00A76223 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B244797274F7FDC00A76223 /* AuthViewController.swift */; };
+		9B244798274F7FDC00A76223 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B244797274F7FDC00A76223 /* LoginViewController.swift */; };
 		9B24479B274F802900A76223 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B24479A274F802900A76223 /* AuthViewModel.swift */; };
 		9B24479D274F8D6700A76223 /* UIViewController+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B24479C274F8D6700A76223 /* UIViewController+ViewModel.swift */; };
 		9B2447A0274F9B1400A76223 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B24479F274F9B1400A76223 /* MainTabBarViewController.swift */; };
@@ -23,7 +38,7 @@
 		9B705867274647D90099608A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B705866274647D90099608A /* Assets.xcassets */; };
 		9B70586A274647D90099608A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B705868274647D90099608A /* LaunchScreen.storyboard */; };
 		9B86C48A275670CE0079539C /* AdminMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B86C489275670CE0079539C /* AdminMain.storyboard */; };
-		9B86C48F2756725F0079539C /* AdminMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B86C48E2756725F0079539C /* AdminMainViewController.swift */; };
+		9B86C48F2756725F0079539C /* AdminMainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B86C48E2756725F0079539C /* AdminMainTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +46,23 @@
 		9B01C962274D15A6000825BA /* UserDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDishesViewController.swift; sourceTree = "<group>"; };
 		9B01C96C274D179D000825BA /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		9B01C970274D2072000825BA /* UserDishesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDishesViewModel.swift; sourceTree = "<group>"; };
+		9B0633FA2758E7F200235E98 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		9B0633FD2758E9C500235E98 /* AdminDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDishesViewController.swift; sourceTree = "<group>"; };
+		9B0634032758F60300235E98 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9B0634042758F60300235E98 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9B0634052758F60300235E98 /* Company+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9B0634062758F60300235E98 /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9B0634072758F60300235E98 /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9B0634082758F60300235E98 /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9B0634092758F60300235E98 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9B06340A2758F60300235E98 /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9B06340B2758F60300235E98 /* Dish+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9B06340C2758F60300235E98 /* Dish+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9B06340D2758F60300235E98 /* Deliveryman+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deliveryman+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9B06340E2758F60300235E98 /* Deliveryman+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deliveryman+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9B06341D2759194D00235E98 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9B244795274F7FB600A76223 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
-		9B244797274F7FDC00A76223 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		9B244797274F7FDC00A76223 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9B24479A274F802900A76223 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		9B24479C274F8D6700A76223 /* UIViewController+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ViewModel.swift"; sourceTree = "<group>"; };
 		9B24479F274F9B1400A76223 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +75,7 @@
 		9B705869274647D90099608A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B70586B274647D90099608A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B86C489275670CE0079539C /* AdminMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMain.storyboard; sourceTree = "<group>"; };
-		9B86C48E2756725F0079539C /* AdminMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMainViewController.swift; sourceTree = "<group>"; };
+		9B86C48E2756725F0079539C /* AdminMainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMainTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +146,8 @@
 		9B01C967274D1600000825BA /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				9B244797274F7FDC00A76223 /* AuthViewController.swift */,
+				9B244797274F7FDC00A76223 /* LoginViewController.swift */,
+				9B0633FA2758E7F200235E98 /* RegistrationViewController.swift */,
 				9B244795274F7FB600A76223 /* Auth.storyboard */,
 			);
 			path = Auth;
@@ -132,6 +163,7 @@
 		9B01C969274D1638000825BA /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				9B06341B2758F61200235E98 /* Safety */,
 				9B01C96C274D179D000825BA /* CoreDataService.swift */,
 				9B705863274647D80099608A /* deliveryApp.xcdatamodeld */,
 			);
@@ -194,6 +226,41 @@
 			path = Appearance;
 			sourceTree = "<group>";
 		};
+		9B0633FC2758E9AF00235E98 /* DishesList */ = {
+			isa = PBXGroup;
+			children = (
+				9B0633FD2758E9C500235E98 /* AdminDishesViewController.swift */,
+			);
+			path = DishesList;
+			sourceTree = "<group>";
+		};
+		9B06341B2758F61200235E98 /* Safety */ = {
+			isa = PBXGroup;
+			children = (
+				9B0634032758F60300235E98 /* User+CoreDataClass.swift */,
+				9B0634042758F60300235E98 /* User+CoreDataProperties.swift */,
+				9B0634052758F60300235E98 /* Company+CoreDataClass.swift */,
+				9B0634062758F60300235E98 /* Company+CoreDataProperties.swift */,
+				9B0634072758F60300235E98 /* Order+CoreDataClass.swift */,
+				9B0634082758F60300235E98 /* Order+CoreDataProperties.swift */,
+				9B0634092758F60300235E98 /* Ingredient+CoreDataClass.swift */,
+				9B06340A2758F60300235E98 /* Ingredient+CoreDataProperties.swift */,
+				9B06340B2758F60300235E98 /* Dish+CoreDataClass.swift */,
+				9B06340C2758F60300235E98 /* Dish+CoreDataProperties.swift */,
+				9B06340D2758F60300235E98 /* Deliveryman+CoreDataClass.swift */,
+				9B06340E2758F60300235E98 /* Deliveryman+CoreDataProperties.swift */,
+			);
+			path = Safety;
+			sourceTree = "<group>";
+		};
+		9B06341C2759193400235E98 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9B06341D2759194D00235E98 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		9B244799274F801400A76223 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,8 +313,10 @@
 		9B86C48D275671180079539C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9B06341C2759193400235E98 /* Profile */,
+				9B0633FC2758E9AF00235E98 /* DishesList */,
 				9B86C489275670CE0079539C /* AdminMain.storyboard */,
-				9B86C48E2756725F0079539C /* AdminMainViewController.swift */,
+				9B86C48E2756725F0079539C /* AdminMainTabBarViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -324,18 +393,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0634162758F60300235E98 /* Ingredient+CoreDataProperties.swift in Sources */,
 				9B01C963274D15A6000825BA /* UserDishesViewController.swift in Sources */,
-				9B86C48F2756725F0079539C /* AdminMainViewController.swift in Sources */,
+				9B0634192758F60300235E98 /* Deliveryman+CoreDataClass.swift in Sources */,
+				9B0634112758F60300235E98 /* Company+CoreDataClass.swift in Sources */,
+				9B86C48F2756725F0079539C /* AdminMainTabBarViewController.swift in Sources */,
+				9B0634102758F60300235E98 /* User+CoreDataProperties.swift in Sources */,
+				9B06341E2759194D00235E98 /* ProfileViewController.swift in Sources */,
 				9B705865274647D80099608A /* deliveryApp.xcdatamodeld in Sources */,
 				9B70585B274647D80099608A /* AppDelegate.swift in Sources */,
+				9B06341A2758F60300235E98 /* Deliveryman+CoreDataProperties.swift in Sources */,
+				9B0633FB2758E7F200235E98 /* RegistrationViewController.swift in Sources */,
 				9B2447A0274F9B1400A76223 /* MainTabBarViewController.swift in Sources */,
+				9B0633FE2758E9C500235E98 /* AdminDishesViewController.swift in Sources */,
 				9B70585D274647D80099608A /* SceneDelegate.swift in Sources */,
-				9B244798274F7FDC00A76223 /* AuthViewController.swift in Sources */,
+				9B0634182758F60300235E98 /* Dish+CoreDataProperties.swift in Sources */,
+				9B0634132758F60300235E98 /* Order+CoreDataClass.swift in Sources */,
+				9B244798274F7FDC00A76223 /* LoginViewController.swift in Sources */,
+				9B0634142758F60300235E98 /* Order+CoreDataProperties.swift in Sources */,
 				9B01C96D274D179D000825BA /* CoreDataService.swift in Sources */,
 				9B01C971274D2072000825BA /* UserDishesViewModel.swift in Sources */,
 				9B01C95E274D0954000825BA /* AppAppearance.swift in Sources */,
+				9B0634152758F60300235E98 /* Ingredient+CoreDataClass.swift in Sources */,
+				9B0634122758F60300235E98 /* Company+CoreDataProperties.swift in Sources */,
 				9B24479D274F8D6700A76223 /* UIViewController+ViewModel.swift in Sources */,
 				9B24479B274F802900A76223 /* AuthViewModel.swift in Sources */,
+				9B0634172758F60300235E98 /* Dish+CoreDataClass.swift in Sources */,
+				9B06340F2758F60300235E98 /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

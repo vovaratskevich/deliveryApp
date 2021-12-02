@@ -1,30 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Company" representedClassName="Company" syncable="YES" codeGenerationType="class">
+    <entity name="Company" representedClassName="Company" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="deliveryman" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Deliveryman" inverseName="owner" inverseEntity="Deliveryman"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="company" inverseEntity="Order"/>
     </entity>
     <entity name="Deliveryman" representedClassName="Deliveryman" syncable="YES">
-        <attribute name="lsurname" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="surname" optional="YES" attributeType="String"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="deliveryman" inverseEntity="Company"/>
     </entity>
     <entity name="Dish" representedClassName="Dish" syncable="YES">
         <attribute name="imageName" optional="YES" attributeType="String"/>
-        <attribute name="ingridients" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="price" optional="YES" attributeType="String"/>
+        <relationship name="ingridients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="owner" inverseEntity="Ingredient"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="dish" inverseEntity="Order"/>
     </entity>
     <entity name="Ingredient" representedClassName="Ingredient" syncable="YES">
         <attribute name="count" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Dish" inverseName="ingridients" inverseEntity="Dish"/>
     </entity>
     <entity name="Order" representedClassName="Order" syncable="YES">
         <attribute name="adress" optional="YES" attributeType="String"/>
-        <attribute name="deliveryman" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="login" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="surname" optional="YES" attributeType="String"/>
+        <relationship name="company" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Company" inverseName="owner" inverseEntity="Company"/>
+        <relationship name="dish" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dish" inverseName="owner" inverseEntity="Dish"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="order" inverseEntity="User"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="accessory" optional="YES" attributeType="String"/>
@@ -34,13 +43,14 @@
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="surname" optional="YES" attributeType="String"/>
+        <relationship name="order" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="owner" inverseEntity="Order"/>
     </entity>
     <elements>
-        <element name="Deliveryman" positionX="-401.546875" positionY="290.22265625" width="128" height="74"/>
-        <element name="Dish" positionX="-222.5390625" positionY="-150.92578125" width="128" height="89"/>
-        <element name="Ingredient" positionX="-218.203125" positionY="-36.51171875" width="128" height="59"/>
-        <element name="Order" positionX="-404.3828125" positionY="38.01171875" width="128" height="119"/>
-        <element name="User" positionX="-406.859375" positionY="-154.4140625" width="145.796875" height="134"/>
-        <element name="Company" positionX="-401.171875" positionY="189.9453125" width="128" height="58"/>
+        <element name="Company" positionX="-195.9140625" positionY="136.05078125" width="128" height="88"/>
+        <element name="Deliveryman" positionX="-191.98046875" positionY="310.234375" width="128" height="103"/>
+        <element name="Dish" positionX="-596.72265625" positionY="-149.515625" width="128" height="118"/>
+        <element name="Ingredient" positionX="-601.484375" positionY="22.984375" width="128" height="88"/>
+        <element name="Order" positionX="-400.99609375" positionY="127.89453125" width="128" height="193"/>
+        <element name="User" positionX="-406.859375" positionY="-154.4140625" width="145.796875" height="163"/>
     </elements>
 </model>
