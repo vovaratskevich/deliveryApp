@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginViewController: AppViewController<AuthViewModel> {
-    
+     
     var coreDataService = CoreDataService()
     var user: User?
 
@@ -18,7 +18,11 @@ class LoginViewController: AppViewController<AuthViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        let dishArray = coreDataService.getDishArray()
+//        //dishArray = dishArray.compactMap { $0 }
+//        let ingridientsSet = dishArray.last?.ingridients as? Set<Ingredient>
+//        let ingridientsArray = Array(ingridientsSet!)
+//        print(ingridientsArray)
         user = coreDataService.obtainMainUser()
     }
     @IBAction func handlePressLoginButton(_ sender: Any) {

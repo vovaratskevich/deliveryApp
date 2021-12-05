@@ -40,7 +40,7 @@
 		9B86C48A275670CE0079539C /* AdminMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B86C489275670CE0079539C /* AdminMain.storyboard */; };
 		9B86C48F2756725F0079539C /* AdminMainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B86C48E2756725F0079539C /* AdminMainTabBarViewController.swift */; };
 		9BD32D34275A66D000411067 /* AddDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD32D33275A66D000411067 /* AddDishViewController.swift */; };
-		9BD32D37275A671400411067 /* AddIngridientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD32D36275A671400411067 /* AddIngridientViewController.swift */; };
+		9BD32D37275A671400411067 /* AddIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD32D36275A671400411067 /* AddIngredientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,7 +79,7 @@
 		9B86C489275670CE0079539C /* AdminMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminMain.storyboard; sourceTree = "<group>"; };
 		9B86C48E2756725F0079539C /* AdminMainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMainTabBarViewController.swift; sourceTree = "<group>"; };
 		9BD32D33275A66D000411067 /* AddDishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDishViewController.swift; sourceTree = "<group>"; };
-		9BD32D36275A671400411067 /* AddIngridientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngridientViewController.swift; sourceTree = "<group>"; };
+		9BD32D36275A671400411067 /* AddIngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,7 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				9BD32D32275A66AD00411067 /* AddDish */,
-				9BD32D35275A66D700411067 /* AddIngridient */,
+				9BD32D35275A66D700411067 /* AddIngredient */,
 				9B0633FD2758E9C500235E98 /* AdminDishesViewController.swift */,
 			);
 			path = DishesList;
@@ -335,12 +335,12 @@
 			path = AddDish;
 			sourceTree = "<group>";
 		};
-		9BD32D35275A66D700411067 /* AddIngridient */ = {
+		9BD32D35275A66D700411067 /* AddIngredient */ = {
 			isa = PBXGroup;
 			children = (
-				9BD32D36275A671400411067 /* AddIngridientViewController.swift */,
+				9BD32D36275A671400411067 /* AddIngredientViewController.swift */,
 			);
-			path = AddIngridient;
+			path = AddIngredient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,7 +429,7 @@
 				9B0633FB2758E7F200235E98 /* RegistrationViewController.swift in Sources */,
 				9B2447A0274F9B1400A76223 /* MainTabBarViewController.swift in Sources */,
 				9B0633FE2758E9C500235E98 /* AdminDishesViewController.swift in Sources */,
-				9BD32D37275A671400411067 /* AddIngridientViewController.swift in Sources */,
+				9BD32D37275A671400411067 /* AddIngredientViewController.swift in Sources */,
 				9B70585D274647D80099608A /* SceneDelegate.swift in Sources */,
 				9B0634182758F60300235E98 /* Dish+CoreDataProperties.swift in Sources */,
 				9B0634132758F60300235E98 /* Order+CoreDataClass.swift in Sources */,
