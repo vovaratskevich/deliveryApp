@@ -12,8 +12,11 @@ import UIKit
 class CoreDataService {
     
     static var currentUser: User?
+    static var dishesArray: [Dish]?
     
     var fetchDishResultController = NSFetchedResultsController<Dish>()
+    var fetchCompanyResultController = NSFetchedResultsController<Company>()
+    var orderFetchResultController = NSFetchedResultsController<Order>()
     
     var context: NSManagedObjectContext    {
         return persistentContainer.viewContext
@@ -179,6 +182,141 @@ class CoreDataService {
         } else {
             return [Ingredient]()
         }
+    }
+    
+    //MARK: - Deliveryman
+    
+    func createDeliveryman(name: String, surname: String, phone: String) -> Bool {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Deliveryman")
+        fetchRequest.predicate = NSPredicate(format: "name == %@", name)
+        
+        if let deliverymans = try? context.fetch(fetchRequest) as? [Deliveryman], !deliverymans.isEmpty {
+            return false
+        } else {
+            let deliveryman = Deliveryman(context: context)
+            deliveryman.name = name
+            deliveryman.surname = surname
+            deliveryman.phone = phone
+            saveContext()
+            return true
+        }
+    }
+    
+    func fetchDeliveryman(name: String) -> Deliveryman? {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Deliveryman")
+        fetchRequest.predicate = NSPredicate(format: "name = %@", name)
+        
+        if let deliverymans = try? context.fetch(fetchRequest) as? [Deliveryman], !deliverymans.isEmpty {
+            return deliverymans.first!
+        } else {
+            return nil
+        }
+    }
+    
+    func getDeliverymansCount() -> Int {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Deliveryman")
+        
+        do {
+            let count = try context.count(for: fetchRequest)
+            return count
+        } catch {
+            return 0
+        }
+    }
+    
+    func getDeliverymanArray() -> [Deliveryman] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Deliveryman")
+        
+        if let deliverymans = try? context.fetch(fetchRequest) as? [Deliveryman], !deliverymans.isEmpty {
+            return deliverymans
+        } else {
+            return [Deliveryman]()
+        }
+    }
+    
+    //MARK: - Company
+    
+    func createCompany(name: String, deliverymans: [Deliveryman]) -> Bool {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Company")
+        fetchRequest.predicate = NSPredicate(format: "name == %@", name)
+        
+        if let companys = try? context.fetch(fetchRequest) as? [Company], !companys.isEmpty {
+            return false
+        } else {
+            let company = Company(context: context)
+            company.name = name
+            company.deliveryman = NSSet(array: deliverymans)
+            saveContext()
+            return true
+        }
+    }
+    
+    func getCompanyArray() -> [Company] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Company")
+        
+        if let companys = try? context.fetch(fetchRequest) as? [Company], !companys.isEmpty {
+            return companys
+        } else {
+            return [Company]()
+        }
+    }
+    
+    func getFetchCompanyResultController() {
+        
+        let fetchRequest: NSFetchRequest<Company> = Company.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        fetchCompanyResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        try! fetchDishResultController.performFetch()
+    }
+    
+    func deleteDish(dish: Company) {
+        context.delete(dish)
+        saveContext()
+    }
+    
+    //MARK: - Order
+    
+    func createOrder(name: String, surname: String, adress: String, phone: String, deliveryman: Deliveryman, login: String, dishes: [Dish], id: Int) -> Bool {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Order")
+        fetchRequest.predicate = NSPredicate(format: "id == %d", id)
+        
+        if let orders = try? context.fetch(fetchRequest) as? [Order], !orders.isEmpty {
+            return false
+        } else {
+            let order = Order(context: context)
+            order.adress = adress
+            order.deliveryman = deliveryman
+            order.dish = NSSet(array: dishes)
+            order.login = login
+            order.name = name
+            order.surname = surname
+            order.id = Int16(id)
+            order.status = "pending"
+            
+            let date = Date()
+            order.date = date
+            
+            let user = fetchUser(login: (CoreDataService.currentUser?.login)!)
+            order.owner = user
+            saveContext()
+            return true
+        }
+    }
+    
+    func getOrderFetchResultController() {
+        
+        let fetchRequest: NSFetchRequest<Order> = Order.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: #keyPath(Order.date), ascending: true)
+        
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        orderFetchResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        try! orderFetchResultController.performFetch()
     }
     
     //MARK: - CreateAdmin

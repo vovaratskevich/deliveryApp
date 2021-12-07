@@ -17,8 +17,6 @@
 		9B0634102758F60300235E98 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634042758F60300235E98 /* User+CoreDataProperties.swift */; };
 		9B0634112758F60300235E98 /* Company+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634052758F60300235E98 /* Company+CoreDataClass.swift */; };
 		9B0634122758F60300235E98 /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634062758F60300235E98 /* Company+CoreDataProperties.swift */; };
-		9B0634132758F60300235E98 /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634072758F60300235E98 /* Order+CoreDataClass.swift */; };
-		9B0634142758F60300235E98 /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634082758F60300235E98 /* Order+CoreDataProperties.swift */; };
 		9B0634152758F60300235E98 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0634092758F60300235E98 /* Ingredient+CoreDataClass.swift */; };
 		9B0634162758F60300235E98 /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B06340A2758F60300235E98 /* Ingredient+CoreDataProperties.swift */; };
 		9B0634172758F60300235E98 /* Dish+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B06340B2758F60300235E98 /* Dish+CoreDataClass.swift */; };
@@ -31,6 +29,7 @@
 		9B24479B274F802900A76223 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B24479A274F802900A76223 /* AuthViewModel.swift */; };
 		9B24479D274F8D6700A76223 /* UIViewController+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B24479C274F8D6700A76223 /* UIViewController+ViewModel.swift */; };
 		9B2447A0274F9B1400A76223 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B24479F274F9B1400A76223 /* MainTabBarViewController.swift */; };
+		9B28CD87275F79E700BA3D44 /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B28CD86275F79E700BA3D44 /* Order+CoreDataProperties.swift */; };
 		9B70585B274647D80099608A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70585A274647D80099608A /* AppDelegate.swift */; };
 		9B70585D274647D80099608A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70585C274647D80099608A /* SceneDelegate.swift */; };
 		9B705862274647D80099608A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B705860274647D80099608A /* Main.storyboard */; };
@@ -41,6 +40,11 @@
 		9B86C48F2756725F0079539C /* AdminMainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B86C48E2756725F0079539C /* AdminMainTabBarViewController.swift */; };
 		9BD32D34275A66D000411067 /* AddDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD32D33275A66D000411067 /* AddDishViewController.swift */; };
 		9BD32D37275A671400411067 /* AddIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD32D36275A671400411067 /* AddIngredientViewController.swift */; };
+		9BFD02E9275E9BA600CA3F7A /* AddCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD02E8275E9BA600CA3F7A /* AddCompanyViewController.swift */; };
+		9BFD02EB275E9BB400CA3F7A /* AddDeliverymanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD02EA275E9BB400CA3F7A /* AddDeliverymanViewController.swift */; };
+		9BFD02EE275EB31800CA3F7A /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD02ED275EB31800CA3F7A /* OrdersViewController.swift */; };
+		9BFD02F1275EB35E00CA3F7A /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD02F0275EB35E00CA3F7A /* BasketViewController.swift */; };
+		9BFD02F4275ED63A00CA3F7A /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD02F2275ED63A00CA3F7A /* Order+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +58,6 @@
 		9B0634042758F60300235E98 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9B0634052758F60300235E98 /* Company+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9B0634062758F60300235E98 /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		9B0634072758F60300235E98 /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9B0634082758F60300235E98 /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9B0634092758F60300235E98 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9B06340A2758F60300235E98 /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9B06340B2758F60300235E98 /* Dish+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		9B24479A274F802900A76223 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		9B24479C274F8D6700A76223 /* UIViewController+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ViewModel.swift"; sourceTree = "<group>"; };
 		9B24479F274F9B1400A76223 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		9B28CD86275F79E700BA3D44 /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9B705857274647D80099608A /* deliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B70585A274647D80099608A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B70585C274647D80099608A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +83,11 @@
 		9B86C48E2756725F0079539C /* AdminMainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMainTabBarViewController.swift; sourceTree = "<group>"; };
 		9BD32D33275A66D000411067 /* AddDishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDishViewController.swift; sourceTree = "<group>"; };
 		9BD32D36275A671400411067 /* AddIngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientViewController.swift; sourceTree = "<group>"; };
+		9BFD02E8275E9BA600CA3F7A /* AddCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyViewController.swift; sourceTree = "<group>"; };
+		9BFD02EA275E9BB400CA3F7A /* AddDeliverymanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeliverymanViewController.swift; sourceTree = "<group>"; };
+		9BFD02ED275EB31800CA3F7A /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		9BFD02F0275EB35E00CA3F7A /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		9BFD02F2275ED63A00CA3F7A /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Order+CoreDataClass.swift"; path = "../../../Order+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,10 +253,10 @@
 			children = (
 				9B0634032758F60300235E98 /* User+CoreDataClass.swift */,
 				9B0634042758F60300235E98 /* User+CoreDataProperties.swift */,
+				9BFD02F2275ED63A00CA3F7A /* Order+CoreDataClass.swift */,
+				9B28CD86275F79E700BA3D44 /* Order+CoreDataProperties.swift */,
 				9B0634052758F60300235E98 /* Company+CoreDataClass.swift */,
 				9B0634062758F60300235E98 /* Company+CoreDataProperties.swift */,
-				9B0634072758F60300235E98 /* Order+CoreDataClass.swift */,
-				9B0634082758F60300235E98 /* Order+CoreDataProperties.swift */,
 				9B0634092758F60300235E98 /* Ingredient+CoreDataClass.swift */,
 				9B06340A2758F60300235E98 /* Ingredient+CoreDataProperties.swift */,
 				9B06340B2758F60300235E98 /* Dish+CoreDataClass.swift */,
@@ -319,7 +327,9 @@
 		9B86C48D275671180079539C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9BFD02EF275EB35200CA3F7A /* Basket */,
 				9B06341C2759193400235E98 /* Profile */,
+				9BFD02EC275EB2C400CA3F7A /* OrdersList */,
 				9B0633FC2758E9AF00235E98 /* DishesList */,
 				9B86C489275670CE0079539C /* AdminMain.storyboard */,
 				9B86C48E2756725F0079539C /* AdminMainTabBarViewController.swift */,
@@ -341,6 +351,40 @@
 				9BD32D36275A671400411067 /* AddIngredientViewController.swift */,
 			);
 			path = AddIngredient;
+			sourceTree = "<group>";
+		};
+		9BFD02E6275E9B2B00CA3F7A /* AddDeliveryman */ = {
+			isa = PBXGroup;
+			children = (
+				9BFD02EA275E9BB400CA3F7A /* AddDeliverymanViewController.swift */,
+			);
+			path = AddDeliveryman;
+			sourceTree = "<group>";
+		};
+		9BFD02E7275E9B5600CA3F7A /* AddCompany */ = {
+			isa = PBXGroup;
+			children = (
+				9BFD02E8275E9BA600CA3F7A /* AddCompanyViewController.swift */,
+			);
+			path = AddCompany;
+			sourceTree = "<group>";
+		};
+		9BFD02EC275EB2C400CA3F7A /* OrdersList */ = {
+			isa = PBXGroup;
+			children = (
+				9BFD02E7275E9B5600CA3F7A /* AddCompany */,
+				9BFD02E6275E9B2B00CA3F7A /* AddDeliveryman */,
+				9BFD02ED275EB31800CA3F7A /* OrdersViewController.swift */,
+			);
+			path = OrdersList;
+			sourceTree = "<group>";
+		};
+		9BFD02EF275EB35200CA3F7A /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				9BFD02F0275EB35E00CA3F7A /* BasketViewController.swift */,
+			);
+			path = Basket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +462,7 @@
 				9B0634162758F60300235E98 /* Ingredient+CoreDataProperties.swift in Sources */,
 				9B01C963274D15A6000825BA /* UserDishesViewController.swift in Sources */,
 				9B0634192758F60300235E98 /* Deliveryman+CoreDataClass.swift in Sources */,
+				9BFD02EE275EB31800CA3F7A /* OrdersViewController.swift in Sources */,
 				9B0634112758F60300235E98 /* Company+CoreDataClass.swift in Sources */,
 				9B86C48F2756725F0079539C /* AdminMainTabBarViewController.swift in Sources */,
 				9B0634102758F60300235E98 /* User+CoreDataProperties.swift in Sources */,
@@ -426,21 +471,24 @@
 				9B70585B274647D80099608A /* AppDelegate.swift in Sources */,
 				9B06341A2758F60300235E98 /* Deliveryman+CoreDataProperties.swift in Sources */,
 				9BD32D34275A66D000411067 /* AddDishViewController.swift in Sources */,
+				9BFD02F4275ED63A00CA3F7A /* Order+CoreDataClass.swift in Sources */,
 				9B0633FB2758E7F200235E98 /* RegistrationViewController.swift in Sources */,
 				9B2447A0274F9B1400A76223 /* MainTabBarViewController.swift in Sources */,
 				9B0633FE2758E9C500235E98 /* AdminDishesViewController.swift in Sources */,
 				9BD32D37275A671400411067 /* AddIngredientViewController.swift in Sources */,
 				9B70585D274647D80099608A /* SceneDelegate.swift in Sources */,
 				9B0634182758F60300235E98 /* Dish+CoreDataProperties.swift in Sources */,
-				9B0634132758F60300235E98 /* Order+CoreDataClass.swift in Sources */,
+				9B28CD87275F79E700BA3D44 /* Order+CoreDataProperties.swift in Sources */,
+				9BFD02F1275EB35E00CA3F7A /* BasketViewController.swift in Sources */,
 				9B244798274F7FDC00A76223 /* LoginViewController.swift in Sources */,
-				9B0634142758F60300235E98 /* Order+CoreDataProperties.swift in Sources */,
 				9B01C96D274D179D000825BA /* CoreDataService.swift in Sources */,
 				9B01C971274D2072000825BA /* UserDishesViewModel.swift in Sources */,
 				9B01C95E274D0954000825BA /* AppAppearance.swift in Sources */,
 				9B0634152758F60300235E98 /* Ingredient+CoreDataClass.swift in Sources */,
 				9B0634122758F60300235E98 /* Company+CoreDataProperties.swift in Sources */,
 				9B24479D274F8D6700A76223 /* UIViewController+ViewModel.swift in Sources */,
+				9BFD02E9275E9BA600CA3F7A /* AddCompanyViewController.swift in Sources */,
+				9BFD02EB275E9BB400CA3F7A /* AddDeliverymanViewController.swift in Sources */,
 				9B24479B274F802900A76223 /* AuthViewModel.swift in Sources */,
 				9B0634172758F60300235E98 /* Dish+CoreDataClass.swift in Sources */,
 				9B06340F2758F60300235E98 /* User+CoreDataClass.swift in Sources */,

@@ -18,7 +18,6 @@ class AddIngredientViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
     
     @IBAction func pressedAddButton(_ sender: UIButton) {

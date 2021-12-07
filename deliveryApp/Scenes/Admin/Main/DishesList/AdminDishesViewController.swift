@@ -80,7 +80,7 @@ extension AdminDishesViewController: UITableViewDelegate {
     }
 }
 
-//MARK: - UITableViewDelegate
+//MARK: - NSFetchedResultsControllerDelegate
 
 extension AdminDishesViewController: NSFetchedResultsControllerDelegate {
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {

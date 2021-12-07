@@ -23,10 +23,26 @@ extension Order {
     @NSManaged public var phone: String?
     @NSManaged public var status: String?
     @NSManaged public var surname: String?
-    @NSManaged public var date: Date?
-    @NSManaged public var deliveryman: Deliveryman?
+    @NSManaged public var company: NSSet?
     @NSManaged public var dish: NSSet?
     @NSManaged public var owner: User?
+
+}
+
+// MARK: Generated accessors for company
+extension Order {
+
+    @objc(addCompanyObject:)
+    @NSManaged public func addToCompany(_ value: Company)
+
+    @objc(removeCompanyObject:)
+    @NSManaged public func removeFromCompany(_ value: Company)
+
+    @objc(addCompany:)
+    @NSManaged public func addToCompany(_ values: NSSet)
+
+    @objc(removeCompany:)
+    @NSManaged public func removeFromCompany(_ values: NSSet)
 
 }
 

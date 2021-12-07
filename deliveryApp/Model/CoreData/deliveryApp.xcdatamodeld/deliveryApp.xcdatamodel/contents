@@ -3,12 +3,13 @@
     <entity name="Company" representedClassName="Company" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String"/>
         <relationship name="deliveryman" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Deliveryman" inverseName="owner" inverseEntity="Deliveryman"/>
-        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="company" inverseEntity="Order"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order"/>
     </entity>
     <entity name="Deliveryman" representedClassName="Deliveryman" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="surname" optional="YES" attributeType="String"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="deliveryman" inverseEntity="Order"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="deliveryman" inverseEntity="Company"/>
     </entity>
     <entity name="Dish" representedClassName="Dish" syncable="YES">
@@ -25,13 +26,14 @@
     </entity>
     <entity name="Order" representedClassName="Order" syncable="YES">
         <attribute name="adress" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="login" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="status" optional="YES" attributeType="String"/>
         <attribute name="surname" optional="YES" attributeType="String"/>
-        <relationship name="company" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Company" inverseName="owner" inverseEntity="Company"/>
+        <relationship name="deliveryman" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Deliveryman" inverseName="order" inverseEntity="Deliveryman"/>
         <relationship name="dish" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dish" inverseName="owner" inverseEntity="Dish"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="order" inverseEntity="User"/>
     </entity>
@@ -46,11 +48,11 @@
         <relationship name="order" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="owner" inverseEntity="Order"/>
     </entity>
     <elements>
-        <element name="Company" positionX="-195.9140625" positionY="136.05078125" width="128" height="88"/>
-        <element name="Deliveryman" positionX="-191.98046875" positionY="310.234375" width="128" height="103"/>
+        <element name="Company" positionX="-195.9140625" positionY="136.05078125" width="128" height="74"/>
+        <element name="Deliveryman" positionX="-191.98046875" positionY="310.234375" width="128" height="104"/>
         <element name="Dish" positionX="-596.72265625" positionY="-149.515625" width="128" height="118"/>
         <element name="Ingredient" positionX="-601.484375" positionY="22.984375" width="128" height="88"/>
-        <element name="Order" positionX="-400.99609375" positionY="127.89453125" width="128" height="193"/>
+        <element name="Order" positionX="-400.99609375" positionY="127.89453125" width="128" height="194"/>
         <element name="User" positionX="-406.859375" positionY="-154.4140625" width="145.796875" height="163"/>
     </elements>
 </model>

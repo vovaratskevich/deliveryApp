@@ -11,7 +11,7 @@ class AddDishViewController: UIViewController {
     
     var coreDataService = CoreDataService()
     var ingredientsArray = [Ingredient]()
-    var chosenIngredientsArray: [Ingredient] = [Ingredient]()
+    var chosenIngredientsArray = [Ingredient]()
     
     @IBOutlet private weak var nameTextFeild: UITextField!
     @IBOutlet private weak var priceTextField: UITextField!
