@@ -40,10 +40,9 @@ class BasketViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        self.tabBarController?.navigationItem.title = "Корзина"
         
-        
-        
-        dishesArray = CoreDataService.dishesArray ?? []
+        //dishesArray = CoreDataService.dishesArray
         dishesArray = coreDataService.getDishArray()
         companysArray = coreDataService.getCompanyArray()
     }

@@ -24,6 +24,8 @@
 		9B0634192758F60300235E98 /* Deliveryman+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B06340D2758F60300235E98 /* Deliveryman+CoreDataClass.swift */; };
 		9B06341A2758F60300235E98 /* Deliveryman+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B06340E2758F60300235E98 /* Deliveryman+CoreDataProperties.swift */; };
 		9B06341E2759194D00235E98 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B06341D2759194D00235E98 /* ProfileViewController.swift */; };
+		9B172D5C2760A11600589D33 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B172D5B2760A11600589D33 /* OrderTableViewCell.swift */; };
+		9B172D5F2760B70200589D33 /* EditOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B172D5E2760B70200589D33 /* EditOrderViewController.swift */; };
 		9B244796274F7FB600A76223 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B244795274F7FB600A76223 /* Auth.storyboard */; };
 		9B244798274F7FDC00A76223 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B244797274F7FDC00A76223 /* LoginViewController.swift */; };
 		9B24479B274F802900A76223 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B24479A274F802900A76223 /* AuthViewModel.swift */; };
@@ -65,6 +67,8 @@
 		9B06340D2758F60300235E98 /* Deliveryman+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deliveryman+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9B06340E2758F60300235E98 /* Deliveryman+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deliveryman+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9B06341D2759194D00235E98 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9B172D5B2760A11600589D33 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		9B172D5E2760B70200589D33 /* EditOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditOrderViewController.swift; sourceTree = "<group>"; };
 		9B244795274F7FB600A76223 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		9B244797274F7FDC00A76223 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9B24479A274F802900A76223 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -275,6 +279,14 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		9B172D5D2760B65A00589D33 /* EditOrder */ = {
+			isa = PBXGroup;
+			children = (
+				9B172D5E2760B70200589D33 /* EditOrderViewController.swift */,
+			);
+			path = EditOrder;
+			sourceTree = "<group>";
+		};
 		9B244799274F801400A76223 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,9 +384,11 @@
 		9BFD02EC275EB2C400CA3F7A /* OrdersList */ = {
 			isa = PBXGroup;
 			children = (
+				9B172D5D2760B65A00589D33 /* EditOrder */,
 				9BFD02E7275E9B5600CA3F7A /* AddCompany */,
 				9BFD02E6275E9B2B00CA3F7A /* AddDeliveryman */,
 				9BFD02ED275EB31800CA3F7A /* OrdersViewController.swift */,
+				9B172D5B2760A11600589D33 /* OrderTableViewCell.swift */,
 			);
 			path = OrdersList;
 			sourceTree = "<group>";
@@ -462,6 +476,7 @@
 				9B0634162758F60300235E98 /* Ingredient+CoreDataProperties.swift in Sources */,
 				9B01C963274D15A6000825BA /* UserDishesViewController.swift in Sources */,
 				9B0634192758F60300235E98 /* Deliveryman+CoreDataClass.swift in Sources */,
+				9B172D5F2760B70200589D33 /* EditOrderViewController.swift in Sources */,
 				9BFD02EE275EB31800CA3F7A /* OrdersViewController.swift in Sources */,
 				9B0634112758F60300235E98 /* Company+CoreDataClass.swift in Sources */,
 				9B86C48F2756725F0079539C /* AdminMainTabBarViewController.swift in Sources */,
@@ -479,6 +494,7 @@
 				9B70585D274647D80099608A /* SceneDelegate.swift in Sources */,
 				9B0634182758F60300235E98 /* Dish+CoreDataProperties.swift in Sources */,
 				9B28CD87275F79E700BA3D44 /* Order+CoreDataProperties.swift in Sources */,
+				9B172D5C2760A11600589D33 /* OrderTableViewCell.swift in Sources */,
 				9BFD02F1275EB35E00CA3F7A /* BasketViewController.swift in Sources */,
 				9B244798274F7FDC00A76223 /* LoginViewController.swift in Sources */,
 				9B01C96D274D179D000825BA /* CoreDataService.swift in Sources */,

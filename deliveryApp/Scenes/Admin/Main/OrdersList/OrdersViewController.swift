@@ -34,7 +34,10 @@ class OrdersViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        self.tabBarController?.navigationItem.title = "Заказы"
         
+        coreDataService.getOrderFetchResultController()
+        orderFetchResultController = coreDataService.orderFetchResultController
         try! orderFetchResultController.performFetch()
         orderTableView.reloadData()
     }
@@ -53,13 +56,22 @@ extension OrdersViewController: UITableViewDataSource {
         let order = coreDataService.orderFetchResultController.object(at: indexPath)
         
         cell.textLabel?.text = String(order.id)
-        cell.detailTextLabel?.text = order.status
+        cell.detailTextLabel?.text = order.deliveryman?.name
         return cell
     }    
 }
 
 extension OrdersViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        orderTableView.reloadData()
+        let storyboard = UIStoryboard(name: "AdminMain", bundle: nil)
+        guard let editOrderViewController = storyboard.instantiateViewController(withIdentifier: "EditOrderViewController") as? EditOrderViewController else { return }
+        let order = coreDataService.orderFetchResultController.object(at: indexPath)
+        editOrderViewController.order = order
+        navigationController?.pushViewController(editOrderViewController, animated: true)
+        viewWillDisappear(true)
+    }
 }
 
 //MARK: - NSFetchedResultsControllerDelegate

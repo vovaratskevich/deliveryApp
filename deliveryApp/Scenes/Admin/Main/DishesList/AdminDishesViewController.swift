@@ -12,11 +12,14 @@ class AdminDishesViewController: UIViewController {
 
     var coreDataService = CoreDataService()
     var fethDishResultController: NSFetchedResultsController<Dish>!
+    var dishSelected: Dish?
     
     @IBOutlet private weak var dishTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //self.title = "Блюда"
         
         view.backgroundColor = .white
         
@@ -35,7 +38,7 @@ class AdminDishesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
+        self.tabBarController?.navigationItem.title = "Блюда"
         try! fethDishResultController.performFetch()
         dishTableView.reloadData()
     }
@@ -57,13 +60,14 @@ extension AdminDishesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DishTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DishTableViewCell", for: indexPath) as? OrderTableViewCell
         
         let dish = coreDataService.fetchDishResultController.object(at: indexPath)
         
-        cell.textLabel?.text = dish.name
-        cell.detailTextLabel?.text = dish.price
-        return cell
+        cell?.nameLabel?.text = dish.name
+        cell?.priceLabel?.text = dish.price
+        cell?.dish = dish
+        return cell ?? UITableViewCell()
     }
     
     

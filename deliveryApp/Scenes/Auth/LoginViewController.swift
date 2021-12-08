@@ -25,6 +25,13 @@ class LoginViewController: AppViewController<AuthViewModel> {
 //        print(ingridientsArray)
         user = coreDataService.obtainMainUser()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+
     @IBAction func handlePressLoginButton(_ sender: Any) {
         //проверка соответсвия loginTextField & passTextField юзеру в базе
         if (loginTextField.text!.isEmpty || passwordTextField.text!.isEmpty) {

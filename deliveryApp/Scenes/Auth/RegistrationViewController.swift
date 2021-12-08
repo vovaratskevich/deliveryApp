@@ -25,6 +25,12 @@ class RegistrationViewController: UIViewController {
         user = coreDataService.obtainMainUser()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+    
     @IBAction func pressedSignInButton(_ sender: UIButton) {
         if (loginTextField.text!.isEmpty ||
             emailTextField.text!.isEmpty ||

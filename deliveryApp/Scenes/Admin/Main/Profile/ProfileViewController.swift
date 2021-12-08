@@ -23,9 +23,15 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        self.tabBarController?.navigationItem.title = "Профиль"
+    }
+    
     @IBAction func pressedEditButton(_ sender: UIBarButtonItem) {
         loginTextField.isUserInteractionEnabled = true
         emailTextField.isUserInteractionEnabled = true

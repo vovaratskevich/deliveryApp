@@ -12,7 +12,7 @@ import UIKit
 class CoreDataService {
     
     static var currentUser: User?
-    static var dishesArray: [Dish]?
+    static var dishesArray: [Dish] = [Dish]()
     
     var fetchDishResultController = NSFetchedResultsController<Dish>()
     var fetchCompanyResultController = NSFetchedResultsController<Company>()
@@ -294,6 +294,7 @@ class CoreDataService {
             order.login = login
             order.name = name
             order.surname = surname
+            order.phone = phone
             order.id = Int16(id)
             order.status = "pending"
             
@@ -307,10 +308,27 @@ class CoreDataService {
         }
     }
     
+    func saveOrderData(id: Int, name: String, surname: String, phone: String, adres: String, status: String) {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Order")
+        fetchRequest.predicate = NSPredicate(format: "id == %d", id)
+
+        if let orders = try? context.fetch(fetchRequest) as? [Order], !orders.isEmpty {
+            let order = orders.first!
+            order.name = name
+            order.surname = surname
+            order.phone = phone
+            order.adress = adres
+            order.status = status
+            saveContext()
+        }
+        getOrderFetchResultController()
+    }
+    
+    
     func getOrderFetchResultController() {
         
         let fetchRequest: NSFetchRequest<Order> = Order.fetchRequest()
-        let sortDescriptor = NSSortDescriptor(key: #keyPath(Order.date), ascending: true)
+        let sortDescriptor = NSSortDescriptor(key: #keyPath(Order.date), ascending: false)
         
         fetchRequest.sortDescriptors = [sortDescriptor]
         
